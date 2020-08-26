@@ -86,13 +86,24 @@
         <li>
         <div class="formCheck" id="isCustomized">
           <input type="checkbox" id="customized" name="customized" value="true">
-          <label for="customzied">I plan to customize my vehicle (for e.g. suspension upgrades, paint jobs, sports seats).</label><br>
+          <label for="customzied">I plan to customize my vehicle (e.g. suspension upgrades, paint jobs, sports seats).</label><br>
         </div>
         </li>
 
-    
+        <li>
+          <div class="formBox">
+            <label for="carNickname">Car Nickname: </label>
+            <input type="text" id="carNickname" placeholder="">
+          </div>
+        </li>
+
         <div class="formBox" id="submit">
         <button id="btn">Value to the future!</button>
+        </div>
+
+        <div class="resetButton">
+          <button id = "rbtn" onClick="window.location.reload();">Or reset & start over</button>
+
         </div>
     </ul>
     </form>

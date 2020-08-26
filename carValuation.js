@@ -37,9 +37,10 @@ let carColors = {
 // baseline depreciation
 function getDepRate(actualAge) {
     if (actualAge === 1) return 0.30;
-    if (actualAge === 2 || actualAge === 3) return 0.18;
-    if (actualAge >= 4) return 0.15;
-    if (actualAge >= 10) return 0.1;
+    if (actualAge === 2 || actualAge === 3) return 0.20;
+    if (actualAge >= 4 && actualAge < 6) return 0.18;
+    if (actualAge >= 6) return 0.15;
+    if (actualAge >= 8) return 0.1;
 }
 
 function getAvgDepRate(year, buyAge, type, color, milesPerYear=150000/8) {
@@ -97,10 +98,11 @@ function populateValues(buyPrice, buyAge=0, milesPerYear, type, color, isCustomi
     return values;
 }
 
-// console.log('test-0', populateValues(20000, 0, 150000/8, 'Off-road SUV', ''))
-// console.log('test-1', populateValues(20000, 1, 150000/8, 'Off-road SUV', ''))
-// console.log('test-2', populateValues(20000, 2, 150000/8, 'Off-road SUV', ''))
-// console.log('test-2', populateValues(20000, 3, 150000/8, 'Off-road SUV', ''))
+console.log('test-0', populateValues(20000, 0, 150000/8, 'Off-road SUV', ''))
+console.log('test-1', populateValues(20000, 1, 150000/8, 'Off-road SUV', ''))
+console.log('test-2', populateValues(20000, 2, 150000/8, 'Off-road SUV', ''))
+console.log('test-3', populateValues(20000, 3, 150000/8, 'Off-road SUV', ''))
+console.log('test-3=4', populateValues(20000, 5, 150000/8, 'Off-road SUV', ''))
 
 
 // export default populateValues;

@@ -29,6 +29,7 @@ body {
     margin-right: 60px;
     background-color: #f2f6fc;
     padding-right: 20px;
+    line-height: 1.4;
 }
 /* form > li {
     padding-bottom: 10px;
@@ -55,6 +56,7 @@ li {
 
 .options {
     margin-left: 35%;
+    font-size: 14px;
 }
 
 #submit {
@@ -74,6 +76,30 @@ li {
     /* font-style: bold; */
     font-weight: 600;
     font-size: 14px;
+}
+
+#btn:hover {
+    background-color: #1b5c34;
+    border: none;
+    color: #ffffff;
+    /* color: #f5ca76; */
+}
+
+.resetButton {
+    text-align: center;
+
+}
+#rbtn {
+    border: none;
+    background-color: white;
+    color: grey;
+    font-size: 12px;
+}
+
+#rbtn:hover {
+    background-color: grey;
+    color: white;
+    border: none;
 }
 
 #headbar {
