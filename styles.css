@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@100;300;400&family=Titillium+Web:wght@300;600&display=swap');
+
+#chartContainer {
+ margin: 0 auto;
+ /* margin-top: 100px; */
+}
+
+body, body input, body #btn {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.contents {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+}
+
+.userInput {
+    box-sizing: border-box;
+    margin-right: 60px;
+    background-color: #f2f6fc;
+    padding-right: 20px;
+}
+/* form > li {
+    padding-bottom: 10px;
+} */
+
+.formBox > input {
+    width: 25%;
+    /* margin-left: 5px; */
+}
+
+.formBox > #comment {
+    font-style: italic;
+    font-size: 11px;
+    color: blue;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+/* li:last-of-type {
+    list-style: none;
+} */
+
+.options {
+    margin-left: 35%;
+}
+
+#submit {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#btn {
+    width: 90%;
+    background-color: #f5ca76;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #1b5c34;
+    /* font-style: bold; */
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#headbar {
+    background-color: #f5ca76;
+    height: 1.5px;
+    margin-bottom: 20px;
+
+}

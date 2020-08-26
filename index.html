@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Car Value Over Time</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="application/javascript" src="carValuation.js"></script>
+  </head>
+  
+  <body>
+    <h1>How does the value of a car change over time?</h1>
+    <p>The true cost of a car is its depreciation over time, which varies on a number of factors. Input the price of your car and hit enter for a quick estimate, or add the other details too for a closer projection.</p>
+    <div id="headbar"></div>
+    <div class="contents">
+   
+    <form class="userInput">
+      <ul>
+        <li>
+        <div class="formBox">
+          <label for="price">Price of car, at time of purchase: </label>
+          <input type="text" id="price" placeholder="e.g. 20000">
+          <br>
+          <label id="comment" for="price">You can go ahead and click "Value to the future!" now to see the base-level change in value over time.</label>
+        </div>
+        </li>
+
+        <li>
+        <div class="formBox">
+          <label for="year">Year of purchase: </label>
+          <input type="text" id="yearPurchased" placeholder="e.g. 2019">
+        </div>
+        </li>
+
+        <li>
+        <div class="formBox">
+          <label for="age">How old is the car (in years)?</label>
+          <input type="text" id="age" placeholder="e.g. 2">
+        </div>
+        </li>
+
+        <li>
+        <div class="formBox">
+          <label for="miles">How many miles does it do per year?</label>
+          <input type="text" id="mpy" placeholder="e.g. 18000">
+        </div>
+        </li>
+
+        <li>
+        <div class="formChoose" id="carType">
+          <label for="type">What kind of car is it?</label><br>
+          <div class="options">
+            <input type="radio" id="Off-road SUV" name="type" value="Off-road SUV">
+            <label for="Off-road SUV">Off-road SUV</label><br>
+            <input type="radio" id="Pickup Truck" name="type" value="Pickup Truck">
+            <label for="Pickup Truck">Pickup Truck</label><br>
+            <input type="radio" id="Mid-size Car" name="type" value="Mid-size Car">
+            <label for="Mid-size Car">Mid-size Car</label><br>
+            <input type="radio" id="Luxury Sedan" name="type" value="Luxury Sedan">
+            <label for="Luxury Sedan">Luxury Sedan</label><br>
+            <input type="radio" id="Electric or Hybrid" name="type" value="Electric or Hybrid">
+            <label for="Electric or Hybrid">Electric or Hybrid</label><br>
+          </div>
+        </div>
+        </li>
+
+        <li>
+        <div class="formSelect" id="carColor">
+          <label for="color">What color is it?</label>
+          <select name="cars" id="carColorOptions">
+            <option value="">Undecided</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Orange">Orange</option>
+            <option value="Green">Green</option>
+            <option value="White">White</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Brown">Brown</option>
+            <option value="Grey">Grey</option>
+            <option value="Black">Black</option>
+            <option value="Silver">Silver</option>
+            <option value="Beige">Beige</option>
+            <option value="Purple">Purple</option>
+            <option value="Gold">Gold</option>
+          </select>
+        </div>
+        </li>
+
+        <li>
+        <div class="formCheck" id="isCustomized">
+          <input type="checkbox" id="customized" name="customized" value="true">
+          <label for="customzied">I plan to customize my vehicle (for e.g. suspension upgrades, paint jobs, sports seats).</label><br>
+        </div>
+        </li>
+
+    
+        <div class="formBox" id="submit">
+        <button id="btn">Value to the future!</button>
+        </div>
+    </ul>
+    </form>
+    <div id="chartContainer" style="height: 400px; width: 80%;"></div>
+    </div>
+
+  </body>
+  
+  
+
+
+  <script type="text/javascript" src="canvasjs.min.js"></script>
+  <script type="text/javascript" src="drawChart.js"></script>
+  </html>
